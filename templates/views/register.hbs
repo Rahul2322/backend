@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headers}}
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    {{>navbar}}
+     <div class="container">
+        <div class="title">Registration</div>
+        <form action="/register" method="POST">
+            <div class="users-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" name="firstname" placeholder="Enter Your First Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" name="lastname" placeholder="Enter Your Last Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" name="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" name="phone" placeholder="Enter Your Number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" name="password" placeholder="Enter Your password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="password" name="cpassword" placeholder="Confirm Password " required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio"  name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                    <label for="dot-1" >
+                        <span class="dot one" ></span>
+                    <span class="gender" >Male</span>
+                    </label>
+                    <label for="dot-2" >
+                        <span class="dot two"></span>
+                    <span class="gender" >Female</span>
+                    </label>
+                    
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

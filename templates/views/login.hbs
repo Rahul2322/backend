@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     {{>headers}}
+   <link rel="stylesheet" href="css/login.css">
+    
+
+<title>Login</title>
+ </head>
+ <body>
+     {{>navbar}}
+ <div class="center">
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+            <div class="txt-field">
+                <input type="text" required name="email">
+                <span></span>
+                <label>Email</label>
+            </div>
+            <div class="txt-field">
+                <input type="password" required name="password">
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member?<a href="#">Signup</a>
+            </div>
+            
+
+        </form>
+    </div>
+     
+ </body>
+ </html>
+ 
+ 
